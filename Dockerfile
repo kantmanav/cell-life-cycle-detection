@@ -17,10 +17,6 @@ COPY setup.py README.md requirements.txt /opt/cell-life-cycle-detection/
 RUN sed -i "/tensorflow>/d" /opt/cell-life-cycle-detection/requirements.txt && \
     pip install --no-cache-dir -r /opt/cell-life-cycle-detection/requirements.txt
 
-RUN pip install git 
-
-RUN pip install https://vanvalenlab/deepcell-tf.git@master
-
 # Copy over deepcell notebooks
 COPY notebooks/ /notebooks/
 
