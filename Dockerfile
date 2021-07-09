@@ -17,12 +17,6 @@ COPY setup.py README.md requirements.txt /opt/cell-life-cycle-detection/
 RUN sed -i "/tensorflow>/d" /opt/cell-life-cycle-detection/requirements.txt && \
     pip install --no-cache-dir -r /opt/cell-life-cycle-detection/requirements.txt
 
-# Copy the rest of the package code and its scripts
-COPY deepcell /opt/cell-life-cycle-detection/deepcell
-
-# Install deepcell via setup.py
-RUN pip install /opt/cell-life-cycle-detection
-
 # Copy over deepcell notebooks
 COPY notebooks/ /notebooks/
 
