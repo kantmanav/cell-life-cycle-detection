@@ -67,7 +67,7 @@ setup(
         'jupyter>=1.0.0,<2',
         'opencv-python-headless<5',
         'deepcell-tracking>=0.4.0',
-        'deepcell-toolbox>=0.9.0,<0.10.0'
+        'deepcell-toolbox>0.10.0'
     ],
     extras_require={
         'tests': [
