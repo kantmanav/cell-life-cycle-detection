@@ -62,7 +62,7 @@ setup(
         'scipy>=1.2.3,<2',
         'scikit-image>=0.14.5',
         'scikit-learn>=0.20.4',
-        'tensorflow~=2.4.2',
+        'tensorflow~=2.5.0',
         'tensorflow-addons>=0.13.0',
         'jupyter>=1.0.0,<2',
         'git+https://github.com/vanvalenlab/deepcell-tf.git@graph_tracking',
