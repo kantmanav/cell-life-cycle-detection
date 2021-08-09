@@ -20,4 +20,4 @@ RUN sed -i "/tensorflow>/d" /opt/cell-life-cycle-detection/requirements.txt && \
 # Copy over deepcell notebooks
 COPY notebooks/ /notebooks/
 
-CMD ["jupyter", "notebook", "--ip=0.0.0.0", "--allow-root", "--NotebookApp.iopub_msg_rate_limit=1e10"]
+CMD ["jupyter", "notebook", "--ip=0.0.0.0", "--allow-root"]
